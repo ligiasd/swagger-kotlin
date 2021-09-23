@@ -1,0 +1,22 @@
+databaseChangeLog:
+  - changeSet:
+      id: V1_002
+      author: Ligiane Domingos
+      changes:
+        - createTable:
+            tableName: TB_LOGIN
+            columns:
+              - column:
+                  name: login_id
+                  type: uuid
+                  constraints:
+                    unique: true
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: email
+                  type: VARCHAR(200)
+                  constraints:
+                    unique: true
+                    primaryKey: true
+                    nullable: false
