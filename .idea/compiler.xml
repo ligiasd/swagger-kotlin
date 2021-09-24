@@ -2,8 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="candidatos.candidatos.main~1" target="11" />
-      <module name="candidatos.candidatos.test~1" target="11" />
+      <module name="candidatos.candidatos.main" target="11" />
+      <module name="candidatos.candidatos.test" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
