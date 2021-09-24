@@ -1,4 +1,4 @@
-package io.redspark.candidatos.config
+package io.redspark.candidatos.config.swagger
 
 import org.springframework.util.StringUtils
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer
