@@ -1,5 +1,6 @@
 package io.redspark.candidatos.database.entities
 
+import io.redspark.candidatos.models.dtos.UserDTO
 import org.springframework.data.jpa.domain.support.AuditingEntityListener
 import java.util.*
 import javax.persistence.*
@@ -19,9 +20,9 @@ data class User(
 
 
 ) {
-    constructor(user: User) : this(
-        id = user.id,
-        email = user.email,
+    constructor(userDTO: UserDTO) : this(
+        id = userDTO.id,
+        email = userDTO.email,
 
         )
 

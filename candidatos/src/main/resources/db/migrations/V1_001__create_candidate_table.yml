@@ -1,0 +1,40 @@
+databaseChangeLog:
+  - changeSet:
+      id: V1_002
+      author: Ligiane Domingos
+      changes:
+        - createTable:
+            tableName: tb_candidate
+            columns:
+              - column:
+                  name: candidate_id
+                  type: uuid
+                  constraints:
+                    unique: true
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: VARCHAR(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: email
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: phone
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: linkedln
+                  type: VARCHAR(300)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: personal_recommendation
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: false
